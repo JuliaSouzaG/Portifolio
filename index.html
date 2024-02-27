@@ -4,88 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Julia Gomes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
-<style>
-    body{
-        background-color: #0E0E0E;
-    }
+<link rel="stylesheet" href="style.css">
 
-    /* NAV BAR */
-    p {
-        color: #9BB8F1;
-        font-size: 16px;
-    }
-    .navbar{
-        height: 50px;
-        padding-top: 1%;
-    }
-    .logo{
-        position: relative;
-        float: left;
-    }
-    .logo, h1 {
-        color: #9BB8F1;
-    }
-    .nav-text {
-        display: inline-block;
-        margin-left: 10px;
-    }
-    .nav-block {
-        position: relative;
-        float: right;
-        margin-right: 10px;
-        margin-top: 10px;
-    }
-    .btn-nav{
-        color: #9BB8F1;
-        background-color: rgba(255, 255, 255, 0);
-        border: none;
-    }
-    .btn-nav:hover{
-        color: azure;
-    }
-    /* CONTAINER 1 */
-    .bloco1, .bloco2{
-        display: inline-block;
-    }
-    .bloco1{
-        padding: 4%;
-    }
-    .container1{
-        display: flex;
-        justify-content: center;
-        margin-top: 150px;
-    }
-    .gumma{
-        margin: 5px;
-    }
-    .dev{
-        text-align: center;
-    }
-    /* CONTAINER 2 */
-    .container2{
-        background-color: #1B1B1B;
-        height: 370px;
-        margin-top: 125px;
-        display: flex;
-        justify-content: center;
-    }
-    .img_virtual{
-        width: 200px;
-        height: 200px;
-    }
-    .txt_cont2, .sobre {
-        width: 433px;
-        text-align: center;
-    }
-    .txt_cont2, .img_cont2{
-        padding: 10px;
-        margin-top: 85px;
-    }
-
-
-
-</style>
 <body>
     <div class="navbar">
         <div class="logo"><h1 class="gumma"><b>&lt;gumma/&gt;</b></h1></div>
@@ -97,9 +21,10 @@
                 <div class="nav-text"><button class="btn-contate_me"><b>CONTATE-ME</b></button></div>
             </div>
     </nav>
+
     <div class="container1">
         <div class="bloco1">
-            <h1>Julia Gomes</h1>
+            <h1 class="julia">Julia Gomes</h1>
             <p class="dev">| Desenvolvedora</p> 
         </div>
         <div class="bloco2">
@@ -113,7 +38,36 @@
         </div>
         <div class="txt_cont2">
             <h1 class="sobre">SOBRE MIM</h1>
-            <P>Atualmente estou cursando o 3° período de Análise e Desenvolvimento de Sistemas na Faculdade de Tecnologia Senac. Desde nova sou movida a curiosidade, gosto de saber como as coisas funcionam/como são feitas, acredito que essa busca pelo saber me impulsiona a aprender coisas novas e a não ser intimidada pelo novo! </P>
+            <P class="sobre_mim">Atualmente estou cursando o 3° período de Análise e Desenvolvimento de Sistemas na Faculdade de Tecnologia Senac. Desde nova sou movida a curiosidade, gosto de saber como as coisas funcionam/como são feitas, acredito que essa busca pelo saber me impulsiona a aprender coisas novas e a não ser intimidada pelo novo! </P>
+        </div>
+    </div>
+
+    <div class="container3">
+        <h1 class="curric">CURRÍCULO</h1>
+    </div>
+
+    <div class="container3">
+        <div class="experiencia">
+            <h2 class="txt_exp">Experiência Profissional</h2>
+            <div class="box3">
+                <p class="titulo">Estágio de Desenvolvimento - Secretaria de Segurança Pública AM</p>
+                <p class="data">Set 2023 - Atualmente</p>
+                <p class="txt_detalhe">- Prototipação de Telas no Figma<br>
+                    - Desenvolvimento de dashboards utilizando o Power BI<br>
+                </p>
+                <img src="img/icons8-power-bi-2021-100.png" alt="" class="img-exp">
+                <img src="img/figma.png" alt="" class="img-exp">
+            </div>
+        </div>
+        <div class="academico">
+            <h2 class="txt_exp">Formação Acadêmica</h2>
+            <div class="box4">
+                <p class="titulo">Análise e Desenvolvimento de Sistemas - Senac</p>
+                <p class="data">2023 - jun 2024</p>
+                <p class="txt_detalhe">- Cursando o 3° período</p>
+                <p class="txt_detalhe2"><img src="img/view-icon.svg" alt=""> Visuzalizar grade curricular</p>
+                <p class="txt_detalhe2"><img src="img/view-icon.svg" alt=""> Visuzalizar notas</p>
+            </div>
         </div>
     </div>
 
