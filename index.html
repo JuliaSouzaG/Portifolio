@@ -9,15 +9,21 @@
     body{
         background-color: #0E0E0E;
     }
+
+    /* NAV BAR */
     p {
         color: #9BB8F1;
         font-size: 16px;
     }
-    .gumma{
+    .navbar{
+        height: 50px;
+        padding-top: 1%;
+    }
+    .logo{
         position: relative;
         float: left;
     }
-    .gumma h1 {
+    .logo, h1 {
         color: #9BB8F1;
     }
     .nav-text {
@@ -28,6 +34,7 @@
         position: relative;
         float: right;
         margin-right: 10px;
+        margin-top: 10px;
     }
     .btn-nav{
         color: #9BB8F1;
@@ -37,11 +44,51 @@
     .btn-nav:hover{
         color: azure;
     }
+    /* CONTAINER 1 */
+    .bloco1, .bloco2{
+        display: inline-block;
+    }
+    .bloco1{
+        padding: 4%;
+    }
+    .container1{
+        display: flex;
+        justify-content: center;
+        margin-top: 150px;
+    }
+    .gumma{
+        margin: 5px;
+    }
+    .dev{
+        text-align: center;
+    }
+    /* CONTAINER 2 */
+    .container2{
+        background-color: #1B1B1B;
+        height: 370px;
+        margin-top: 125px;
+        display: flex;
+        justify-content: center;
+    }
+    .img_virtual{
+        width: 200px;
+        height: 200px;
+    }
+    .txt_cont2, .sobre {
+        width: 433px;
+        text-align: center;
+    }
+    .txt_cont2, .img_cont2{
+        padding: 10px;
+        margin-top: 85px;
+    }
+
+
 
 </style>
 <body>
-    <nav>
-        <div class="gumma"><h1><b>&lt;gumma/&gt;</b></h1></div>
+    <div class="navbar">
+        <div class="logo"><h1 class="gumma"><b>&lt;gumma/&gt;</b></h1></div>
             <div class="nav-block">
                 <div class="nav-text"><button class="btn-nav"><b>SOBRE</b></button></div>
                 <div class="nav-text"><button class="btn-nav"><b>CURRÍCULO</b></button></div>
@@ -50,5 +97,30 @@
                 <div class="nav-text"><button class="btn-contate_me"><b>CONTATE-ME</b></button></div>
             </div>
     </nav>
+    <div class="container1">
+        <div class="bloco1">
+            <h1>Julia Gomes</h1>
+            <p class="dev">| Desenvolvedora</p> 
+        </div>
+        <div class="bloco2">
+            <img src="img/elipse_eu.svg" alt="">
+        </div>      
+    </div>
+
+    <div class="container2">
+        <div class="img_cont2">
+            <img class="img_virtual" src="img/virtual.png" alt="">
+        </div>
+        <div class="txt_cont2">
+            <h1 class="sobre">SOBRE MIM</h1>
+            <P>Atualmente estou cursando o 3° período de Análise e Desenvolvimento de Sistemas na Faculdade de Tecnologia Senac. Desde nova sou movida a curiosidade, gosto de saber como as coisas funcionam/como são feitas, acredito que essa busca pelo saber me impulsiona a aprender coisas novas e a não ser intimidada pelo novo! </P>
+        </div>
+    </div>
+
+    <footer>
+      <p>aaaaaaaaaaaa</p>
+    </footer>
+
 </body>
 </html>
+    
