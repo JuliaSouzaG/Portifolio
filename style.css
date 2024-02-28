@@ -140,7 +140,7 @@ p {
 }
 .box3, .box4{
     border: #9BB8F1 solid;
-    padding: 40px;
+    padding: 32px;
     border-radius: 10px;
     border-width: 1px;
     width: 500px;
@@ -155,4 +155,59 @@ p {
 .txt_detalhe2{
     color: white;
     font-size: 13px;
+}
+
+.container4{
+    margin-top: 121px;
+    background-color: #1B1B1B;
+}
+.txt-cont4 {
+    color: white;
+    font-weight: 500;
+}
+.cont4{
+    display: flex;
+    justify-content: center;
+}
+
+.dev:after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+@keyframes pisca{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 1020px){
+    /* navbar */
+    .btn-nav{
+        font-size: 9px;
+    }
+
+    .btn-contate_me{
+        font-size: 8px;
+        width: 58px;
+        height: 20px;
+    }
+
+
+    /* container 2 */
+    img, .img_virtual{
+        width: 120px;
+        height: 120px;
+    }
+    .sobre {
+        font-size: 23px;
+    }
+    .sobre_mim{
+        font-size: 12px;
+    }
+
 }
