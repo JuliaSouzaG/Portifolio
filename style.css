@@ -8,38 +8,13 @@ p {
     color: #9BB8F1;
     font-size: 16px;
 }
-.navbar{
-    height: 50px;
-    padding-top: 2px;
-}
+
 .logo{
     position: relative;
     float: left;
 }
-.logo, h1 {
-    font-weight: 700;
-    color: #9BB8F1;
-}
-.nav-text {
-    display: inline-block;
-    margin-left: 10px;
-}
-.nav-block {
-    position: relative;
-    float: right;
-    margin-right: 10px;
-    margin-top: 10px;
-}
-.btn-nav{
-    font-family: "Source Code Pro", monospace;
-    font-weight: 700;
-    color: #9BB8F1;
-    background-color: rgba(255, 255, 255, 0);
-    border: none;
-}
-.btn-nav:hover{
-    color: azure;
-}
+
+
 .btn-contate_me{
     font-family: "Source Code Pro", monospace;
     font-weight: 700;
@@ -68,10 +43,7 @@ p {
 .gumma{
     margin: 5px;
 }
-.dev{
-    text-align: center;
-    font-weight: 400;
-}
+
 /* CONTAINER 2 */
 .container2{
     background-color: #1B1B1B;
@@ -186,18 +158,6 @@ p {
 }
 
 @media screen and (max-width: 1020px){
-    /* navbar */
-    .btn-nav{
-        font-size: 9px;
-    }
-
-    .btn-contate_me{
-        font-size: 8px;
-        width: 58px;
-        height: 20px;
-    }
-
-
     /* container 2 */
     img, .img_virtual{
         width: 120px;
