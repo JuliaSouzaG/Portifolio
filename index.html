@@ -40,13 +40,30 @@
 
     .img-tec {
         width: 100px;
-        transition: 0.5s; 
+        transition: 0.5s;
     }
 
-    .img-tec:hover{
-        transform: scale(1.1); 
+    .img-tec:hover {
+        transform: scale(1.1);
     }
 
+    .botao-esc {
+        display: none;
+    }
+
+    .botao-visu {
+        display: block;
+    }
+
+    .cartao {
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    .cartao:hover {
+        transform: scale(1.1);
+        background-color: #c4c4c4;
+    }
 </style>
 
 <body>
@@ -118,7 +135,6 @@
                             Bootstrap.<br>
                             - Prototipação e Design de Telas no Figma.<br>
                             - Desenvolvimento de dashboards utilizando o Power B.I<br>
-
                         </p>
                         <img src="img/js.png" alt="" class="img-exp">
                         <img src="img/typescript.png" alt="" class="img-exp">
@@ -140,6 +156,7 @@
                 </div>
             </div>
         </section>
+        
         <section class="bg-gray p-5">
             <h1 class="text-blue-ligth text-center mb-4">Projetos</h1>
             <div class="row">
@@ -148,14 +165,16 @@
                         <img src="img/bancosystem.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Sistema Bancário</h5>
-                            <p class="card-text">Projeto desenvolvido na faculdade, um sistema de gerênciamento de bancos.</p>
+                            <p class="card-text">Projeto desenvolvido na faculdade, um sistema de gerênciamento de
+                                bancos.</p>
                             <a href="" class="btn btn-primary">Acessar</a>
-                            <a href="https://github.com/JuliaSouzaG/BancoSystem.git" class="btn btn-primary">Repositório</a>
+                            <a href="https://github.com/JuliaSouzaG/BancoSystem.git"
+                                class="btn btn-primary">Repositório</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 mx-auto">
-                    <div class="card">
+                    <div class="card cartao">
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Guia virtual INPA</h5>
@@ -165,14 +184,21 @@
                         </div>
                     </div>
                 </div>
+                <script>
+                    function mostrarElemento(id) {
+                      var element = document.getElementById(id);
+                      element.classList.add("botao-visu");
+                      element.classList.toggle("botao-visu");
+                    }
+                </script>
                 <div class="col-lg-3 col-sm-6 mx-auto">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
+                    <div class="card cartao" onmouseover="mostrarElemento('botao')">
+                        <img src="img/serenatto.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Lading Page</h5>
+                            <h5 class="card-title">Serenatto</h5>
                             <p class="card-text">Projeto desenvolvido para estudo, blablabla</p>
-                            <a href="#" class="btn btn-primary">Visualizar</a>
-                            <a href="#" class="btn btn-primary">Repositório</a>
+                            <a href="https://juliasouzag.github.io/Serenatto/" id="botao" class="btn btn-primary botao-esc">Visualizar</a>
+                            <a href="https://github.com/JuliaSouzaG/Serenatto" class="btn btn-primary">Repositório</a>
                         </div>
                     </div>
                 </div>
