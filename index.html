@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <style>
     .bg-gray {
@@ -58,6 +59,7 @@
     .cartao {
         transition: 0.5s;
         cursor: pointer;
+        width: 115%;
     }
 
     .cartao:hover {
@@ -78,16 +80,16 @@
             <div class="collapse navbar-collapse float-end" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Sobre</a>
+                        <a class="nav-link" aria-current="page" href="#sobre">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Experiência</a>
+                        <a class="nav-link" href="#experiencia">Experiência</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Skills</a>
+                        <a class="nav-link" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projetos</a>
+                        <a class="nav-link" href="#projetos">Projetos</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -108,7 +110,7 @@
             </div>
         </section>
 
-        <section class="bg-gray p-5 d-flex justify-content-center align-items-center flex-sm-wrap">
+        <section id="sobre" class="bg-gray p-5 d-flex justify-content-center align-items-center flex-sm-wrap">
             <div class="me-5">
                 <img src="img/virtual.png" alt="" width="300px">
             </div>
@@ -122,7 +124,7 @@
             </div>
         </section>
 
-        <section class="p-5">
+        <section id="experiencia" class="p-5">
             <div class="d-flex justify-content-center flex-wrap">
                 <div>
                     <h2 class="txt_exp">Experiência Profissional</h2>
@@ -157,48 +159,47 @@
             </div>
         </section>
         
-        <section class="bg-gray p-5">
+        <section id="projetos" class="bg-gray p-5">
             <h1 class="text-blue-ligth text-center mb-4">Projetos</h1>
-            <div class="row">
-                <div class="col-lg-3 col-sm-6 mb-3 mb-sm-0 mx-auto">
-                    <div class="card">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-sm-6 mb-3 mx-auto">
+                    <div class="card cartao">
                         <img src="img/bancosystem.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Sistema Bancário</h5>
                             <p class="card-text">Projeto desenvolvido na faculdade, um sistema de gerênciamento de
                                 bancos.</p>
-                            <a href="" class="btn btn-primary">Acessar</a>
-                            <a href="https://github.com/JuliaSouzaG/BancoSystem.git"
-                                class="btn btn-primary">Repositório</a>
+                            <a href="" class="btn btn-primary"><i class="bi bi-eye"></i> Visualizar</a>
+                            <a href="https://github.com/JuliaSouzaG/BancoSystem.git" target="_blank" class="btn btn-primary"><i class="bi bi-github"></i> Repositório</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 mx-auto">
                     <div class="card cartao">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="img/inpa_img.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Guia virtual INPA</h5>
                             <p class="card-text">Projeto desenvolvido na faculdade, um guia virtual do INPA</p>
-                            <a href="#" class="btn btn-primary">Visualizar</a>
-                            <a href="#" class="btn btn-primary">Repositório</a>
+                            <a href="https://juliasouzag.github.io/GuiaVirtualINPA/" target="_blank" class="btn btn-primary"><i class="bi bi-eye"></i> Visualizar</a>
+                            <a href="https://github.com/JuliaSouzaG/GuiaVirtualINPA" target="_blank" class="btn btn-primary"><i class="bi bi-github"></i> Repositório</a>
                         </div>
                     </div>
                 </div>
                 <script>
-                    function mostrarElemento(id) {
-                      var element = document.getElementById(id);
-                      element.classList.add("botao-visu");
-                      element.classList.toggle("botao-visu");
-                    }
+                   // function mostrarElemento(id) {
+                     // var element = document.getElementById(id);
+                    //  element.classList.add("botao-visu");
+                    //  element.classList.toggle("botao-visu");
+                   // }
                 </script>
                 <div class="col-lg-3 col-sm-6 mx-auto">
-                    <div class="card cartao" onmouseover="mostrarElemento('botao')">
+                    <div class="card cartao">
                         <img src="img/serenatto.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Serenatto</h5>
-                            <p class="card-text">Projeto desenvolvido para estudo, blablabla</p>
-                            <a href="https://juliasouzag.github.io/Serenatto/" id="botao" class="btn btn-primary botao-esc">Visualizar</a>
-                            <a href="https://github.com/JuliaSouzaG/Serenatto" class="btn btn-primary">Repositório</a>
+                            <p class="card-text">Landing Page desenvolvida para estudo</p>
+                            <a href="https://juliasouzag.github.io/Serenatto/" target="_blank" class="btn btn-primary"><i class="bi bi-eye"></i> Visualizar</a>
+                            <a href="https://github.com/JuliaSouzaG/Serenatto" target="_blank" class="btn btn-primary"><i class="bi bi-github"></i> Repositório</a>
                         </div>
                     </div>
                 </div>
