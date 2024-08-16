@@ -67,12 +67,12 @@ p {
     padding: 10px;
     margin-top: 85px;
 }
-.sobre_mim{
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    color: white;
-    font-size: 16px
+
+.sobre-mim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 /* // <uniquifier>: Use a unique and descriptive class name
@@ -170,4 +170,10 @@ p {
         font-size: 12px;
     }
 
+}
+
+.centraliza {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
