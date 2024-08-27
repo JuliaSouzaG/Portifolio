@@ -177,3 +177,7 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+li {
+    list-style: none;
+}

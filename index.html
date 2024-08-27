@@ -13,6 +13,7 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <style>
   .bg-gray {
@@ -67,6 +68,18 @@
     transform: scale(1.1);
     background-color: #c4c4c4;
   }
+
+  .social-img {
+    width: 100px;
+  }
+
+  @media screen and (max-width: 1020px) {
+    .social-img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
 </style>
 
 <body>
@@ -92,7 +105,7 @@
             <a class="nav-link" href="#projetos">Projetos</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
+        <form class="d-flex">
           <a href="#contate_me" class="btn btn-sm btn-light" type="submit">
             Contate-me
           </a>
@@ -108,7 +121,7 @@
         <span class="dev text-blue-ligth text-center">Desenvolvedora Front-end</span>
       </div>
       <div>
-        <img src="img/eu.svg" alt="" />
+        <img src="img/eu.svg" alt="Mulher de pele branca com cabelos longos e castanhos vestindo blusa azul" />
       </div>
     </section>
 
@@ -136,19 +149,26 @@
             Estágio de Desenvolvimento - Secretaria de Segurança Pública AM
           </p>
           <p class="data">Set de 2023 - Atualmente</p>
-          <p class="txt_detalhe">
-            - Desenvolvimento de páginas web utilizando JavaScript, HTML,
-            CSS e os frameworks Angular e Bootstrap.<br />
-            - Prototipação e Design de Telas no Figma.<br />
-            - Experiência com projetos, geridos com metodologias ágeis
-            (Scrum e Kanban).<br />
-          </p>
-          <img src="img/js.png" alt="" class="img-exp" />
-          <img src="img/typescript.png" alt="" class="img-exp" />
-          <img src="img/icons8-angular-96.png" alt="" class="img-exp" />
-          <img src="img/icons8-bootstrap-240.png" alt="" class="img-exp" />
-          <img src="img/figma.png" alt="" class="img-exp" />
-          <img src="img/icons8-power-bi-2021-100.png" alt="" class="img-exp" />
+          <ol class="txt_detalhe">
+            <li>
+              - Desenvolvimento de sistema web utilizando JavaScript, HTML,
+            CSS e os frameworks Angular e Bootstrap.
+            </li>
+            <li>
+              - Integração com APIs RESTful.
+            </li>
+            <li>
+              - Gerenciamento de controle de versão com Git.
+            </li>             
+            <li>- Prototipação e Design de telas no Figma.</li>
+            <li>- Experiência com projetos, geridos com metodologias ágeis
+            (Scrum e Kanban).</li>
+          </ol>
+          <img src="img/icons8-angular-96.png" alt="Angular" class="img-exp" />
+          <img src="img/typescript.png" alt="TypeScript" class="img-exp" />
+          <img src="img/js.png" alt="JavaScript" class="img-exp" />
+          <img src="img/icons8-bootstrap-240.png" alt="Bootstrap" class="img-exp" />
+          <img src="img/figma.png" alt="Figma" class="img-exp" />
         </div>
       </div>
       <!-- <div class="col-12 col-md-6">
@@ -174,29 +194,28 @@
       <div class="row">
         <div class="col-12 col-md-12 col-lg-6 col-xl-4 p-2 centraliza">
           <div class="card cartao bg-dark">
-            <img src="img/bancosystem.png" class="card-img-top" alt="..." />
+            <img src="img/bancosystem.png" class="card-img-top" alt="Repositório do projeto UniBank" />
             <div class="card-body">
               <h5 class="card-title text-light">UniBank</h5>
               <p class="card-text text-light">
                 Sistema de controle bancário, desenvolvido na faculdade para
                 obtenção de nota na matéria de API.
               </p>
-              <!-- <a href="" class="btn btn-primary"><i class="bi bi-eye"></i> Visualizar</a> -->
               <a href="https://github.com/JuliaSouzaG/BancoSystem.git" target="_blank"
                 class="btn btn-sm btn-danger mb-2"><i class="bi bi-github"></i> Repositório</a>
               <div>
-                <img src="img/typescript.png" class="img-exp" />
-                <img src="img/js.png" class="img-exp" />
-                <img src="img/icons8-bootstrap-240.png" class="img-exp" />
-                <img src="img/html.png" class="img-exp" />
-                <img src="img/css-3.png" class="img-exp" />
+                <img src="img/typescript.png" alt="Typescript" class="img-exp" />
+                <img src="img/js.png" alt="JavaScript" class="img-exp" />
+                <img src="img/icons8-bootstrap-240.png" alt="Bootstrap" class="img-exp" />
+                <img src="img/html.png" alt="Html" class="img-exp" />
+                <img src="img/css-3.png" alt="Css" class="img-exp" />
               </div>
             </div>
           </div>
         </div>
         <div class="col-12 col-md-12 col-lg-6 col-xl-4 p-2 centraliza">
           <div class="card bg-dark cartao">
-            <img src="img/inpa_img.png" class="card-img-top" alt="..." />
+            <img src="img/inpa_img.png" class="card-img-top" alt="Página com mapa interativo do INPA" />
             <div class="card-body">
               <h5 class="card-title text-light">Guia virtual INPA</h5>
               <p class="card-text text-light">
@@ -209,17 +228,17 @@
                   class="btn btn-sm btn-danger"><i class="bi bi-github"></i> Repositório</a>
               </div>
               <div>
-                <img src="img/php.png" class="img-exp" />
-                <img src="img/icons8-bootstrap-240.png" class="img-exp" />
-                <img src="img/html.png" class="img-exp" />
-                <img src="img/css-3.png" class="img-exp" />
+                <img src="img/php.png" alt="Php" class="img-exp" />
+                <img src="img/icons8-bootstrap-240.png" alt="Bootstrap" class="img-exp" />
+                <img src="img/html.png" alt="Html" class="img-exp" />
+                <img src="img/css-3.png" alt="Css" class="img-exp" />
               </div>
             </div>
           </div>
         </div>
         <div class="col-12 col-md-12 col-lg-6 col-xl-4 p-2 centraliza">
           <div class="card bg-dark cartao">
-            <img src="img/agenda.png" class="card-img-top" alt="..." />
+            <img src="img/agenda.png" class="card-img-top" alt="Agenda telefônica com lista de contatos e campo de busca" />
             <div class="card-body">
               <h5 class="card-title text-light">Agenda Telefônica</h5>
               <p class="card-text text-light">
@@ -230,17 +249,18 @@
                   class="btn btn-sm btn-danger"><i class="bi bi-github"></i> Repositório</a>
               </div>
               <div>
-                <img src="img/php.png" class="img-exp" />
-                <img src="img/icons8-bootstrap-240.png" class="img-exp" />
-                <img src="img/html.png" class="img-exp" />
-                <img src="img/css-3.png" class="img-exp" />
+                <img src="img/typescript.png" alt="TypeScript" class="img-exp" />
+                <img src="img/js.png" alt="JavaScript" class="img-exp" />
+                <img src="img/icons8-bootstrap-240.png" alt="Bootstrap" class="img-exp" />
+                <img src="img/html.png" alt="Html" class="img-exp" />
+                <img src="img/css-3.png" alt="Css" class="img-exp" />
               </div>
             </div>
           </div>
         </div>
         <div class="col-12 col-md-12 col-lg-12 col-xl-4 p-2 centraliza">
           <div class="card cartao bg-dark">
-            <img src="img/serenatto.png" class="card-img-top" alt="..." />
+            <img src="img/serenatto.png" class="card-img-top" alt="Página inicial da Lading Page Serenatto" />
             <div class="card-body">
               <h5 class="card-title text-light">Serenatto</h5>
               <p class="card-text text-light">Landing Page desenvolvida para estudo</p>
@@ -252,9 +272,9 @@
               </div>
 
               <div>
-                <img src="img/icons8-bootstrap-240.png" class="img-exp" />
-                <img src="img/html.png" class="img-exp" />
-                <img src="img/css-3.png" class="img-exp" />
+                <img src="img/icons8-bootstrap-240.png" alt="Bootstrap" class="img-exp" />
+                <img src="img/html.png" alt="Html" class="img-exp" />
+                <img src="img/css-3.png" alt="Css" class="img-exp" />
               </div>
             </div>
           </div>
@@ -266,33 +286,33 @@
         Tecnologias e Ferramentas
       </h1>
       <div class="d-flex justify-content-between p-3 flex-wrap mx-auto">
-        <div class="p-2"><img src="img/icons8-angular-96.png" alt="" class="img-tec" /></div>
-        <div class="p-2"><img src="img/js.png" alt="" class="img-tec" /></div> 
-        <div class="p-2"><img src="img/typescript.png" alt="" class="img-tec" /></div>
-        <div class="p-2"><img src="img/icons8-bootstrap-240.png" alt="" class="img-tec" /></div>
-        <div class="p-2"><img src="img/html.png" alt="" class="img-tec" /></div>
-        <div class="p-2"><img src="img/css-3.png" alt="" class="img-tec" /></div>
-        <div class="p-2"><img src="img/figma.png" alt="" class="img-tec" /></div>
-        <div class="p-2"><img src="img/icons8-power-bi-2021-100.png" alt="" class="img-tec" /></div>
+        <div class="p-2"><img src="img/icons8-angular-96.png" alt="Angular" class="img-tec" /></div>
+        <div class="p-2"><img src="img/typescript.png" alt="TypeScipt" class="img-tec" /></div>
+        <div class="p-2"><img src="img/js.png" alt="JavaScript" class="img-tec" /></div> 
+        <div class="p-2"><img src="img/git.png" alt="Git" class="img-tec" /></div>
+        <div class="p-2"><img src="img/icons8-bootstrap-240.png" alt="Bootstrap" class="img-tec" /></div>
+        <div class="p-2"><img src="img/html.png" alt="Html" class="img-tec" /></div>
+        <div class="p-2"><img src="img/css-3.png" alt="Css" class="img-tec" /></div>
+        <div class="p-2"><img src="img/figma.png" alt="Figma" class="img-tec" /></div>
+        <div class="p-2"><img src="img/icons8-power-bi-2021-100.png" alt="Power BI" class="img-tec" /></div>
       </div>
     </section>
     <section class="bg-gray p-3" id="contate_me">
       <h1 class="text-blue-ligth text-center mb-5">
         Conecte-se comigo
       </h1>
-      <div class="d-flex justify-content-between mb-3">
-        <a href="https://wa.me/5592982402547" target="_blank"><img src="img/whatsapp.png" alt="Whatsapp" class="p-3" style="width: 100px;" /></a>
+      <div class="centraliza">
+        <div class="d-flex justify-content-between mb-3" style="width: 500px;">
+        <a href="https://wa.me/5592982402547" target="_blank"><img src="img/whatsapp.png" alt="Whatsapp" class="p-3 social-img" /></a>
         <a href="https:/www.linkedin.com/in/júlia-gomes-583000244" target="_blank"><img src="img/linkedin.png" alt="Linkedin"
-            class="p-3" style="width: 100px;" /></a>
-        <a href="https://www.instagram.com/gumma.dev/" target="_blank"><img src="img/social.png" alt="Instagram" class="p-3" style="width: 100px;" /></a>
-        <a href="https://github.com/JuliaSouzaG" target="_blank"><img src="img/github.png" alt="GitHub" class="p-3" style="width: 100px;" /></a>
+            class="p-3 social-img" /></a>
+        <a href="https://www.instagram.com/gumma.dev/" target="_blank"><img src="img/social.png" alt="Instagram" class="p-3 social-img" /></a>
+        <a href="https://github.com/JuliaSouzaG" target="_blank"><img src="img/github.png" alt="GitHub" class="p-3 social-img" /></a>
+      </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>&lt;Em Desenvolvimento&gt;</p>
-  </footer>
   <script src="java.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
